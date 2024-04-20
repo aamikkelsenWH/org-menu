@@ -1011,8 +1011,8 @@ Code copied from lambda in org-colview.el after
          (list '("C-c C-c" "confirm capture" org-capture-finalize :if-non-nil org-capture-mode)))
      ,@(when (fboundp #'org-capture-kill)
          (list '("C-c C-k" "abort capture" org-capture-kill :if-non-nil org-capture-mode)))
-     ("" "" transient-noop)
-     ("q" "quit" transient-quit-all :if-non-nil org-menu-use-q-for-quit)]])
+     ("q" "quit" transient-quit-all :if-non-nil org-menu-use-q-for-quit)]
+    ])
 
 (provide 'org-menu)
 ;;; org-menu.el ends here
